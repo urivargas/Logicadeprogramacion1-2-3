@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de masa corporal</title>
+</head>
+<body>
+    <header><h1>Indice de masa corporal</h1></header>
+
+    <div>
+        <p> Calcular el indice de masa corporal</p>
+        <script>
+
+            function saltarlinea() {
+
+                document.write("<br><br>")
+                
+            }
+            function imprimir(frase) {
+
+                document.write(frase);
+                saltarlinea();
+                
+            }
+
+            function calcularImc(peso,altura) {
+
+                return (peso / (altura * altura));
+                
+                
+            }
+
+            var nombre = prompt (" Informe su nombre")
+            var peso = prompt ( nombre + " Informe su peso")
+            var altura = prompt( nombre + " informe su altura")
+            var imc = calcularImc(peso,altura) 
+
+            imprimir(nombre + " su IMC es " + imc )
+
+            if (imc < 18.5) {
+
+                imprimir("Usted esta abajo de lo recomendado")
+                
+            }
+            if (imc >= 30) {
+                imprimir("Usted tiene obesidad")
+                
+            }
+            if (imc >= 18.5 ) {
+                if (imc < 25) {
+
+                    imprimir ("Su peso esta en el intervalo normal")
+                }
+                
+            }
+            if (imc >= 25) {
+                if (imc < 30) {
+                    imprimir( "Usted tiene sobrepeso")
+                }
+                
+            }
+
+
+            
+           
+           
+           
+            //var pesouriel = 71
+            //var alturauriel = 1.65
+            //var imcUriel = pesouriel / (alturauriel * alturauriel)
+
+            //imprimir ( "El imc de Uriel es: " + imcUriel )
+
+
+
+        </script>
+
+
+    </div>
+
+    <div>
+        
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+</script>
+       
+    
+</body>
+</html>

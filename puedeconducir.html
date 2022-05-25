@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puede conducir?</title>
+</head>
+<body>
+    <header><h1>Sera que puede conducir?</h1></header>
+
+    <div>
+        <script>
+            function saltarLinea() {
+
+                document.write ("<br><br>")
+                
+            }
+
+            function imprimir(frase) {
+
+                document.write (frase);
+                saltarLinea;
+                
+            }
+
+            var edad = parseInt (prompt( " Ingrese su edad "))
+            var tieneLincencia = prompt (" ¿Tiene licencia? Ingreso si o no ")
+
+            
+
+            if ((edad >= 18 ) && (tieneLincencia == "si")) {
+
+                imprimir (" Usted puede conducir")
+            }
+
+
+                else {
+
+                imprimir(" Usted NO puede conducir ")
+                }
+
+              
+
+
+
+                
+         
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minicuadrados</title>
+</head>
+<body>
+    <header><h1>minicuadrados con funciones</h1></header>
+    <canvas
+     width="600" height="400"></canvas>
+    
+     <script>
+         function cuadrados(x,y,color) {
+
+            var pantalla = document.querySelector ("canvas");
+            var pincel = pantalla.getContext("2d");
+            pincel.fillStyle = color
+            pincel.fillRect(x,y,50,50);
+            pincel.strokeStyle = "black";
+            pincel.strokeRect( x,y,50,50)
+             
+         }
+
+         var x = 0
+
+         while (x < 600) {
+
+            cuadrados(x,0,"blue");
+            cuadrados(x,50,"white");
+            cuadrados(x,100,"blue");
+
+            x = x + 50;
+             
+         }
+
+         
+        
+     </script>
+</body>
+</html>

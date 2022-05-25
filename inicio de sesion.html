@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <h1>Prueba inicio de sesion</h1>
+
+    <script>
+        function saltaLinea() {
+            document.write("<br><br>")
+            
+        }
+        function imprimir(frase) {
+            document.write(frase);
+            saltaLinea;
+            
+        }
+            var iniciodeSesion = "alura"
+            var contrasenhaRegistrada = "alura123"
+            
+            var contador = 1 
+            var cantidad = 3
+
+         while (contador <= cantidad){
+
+            var IniciodeSesionIngresado = prompt("Ingrese Usuario");
+            var contrasenhaIngresada = prompt("Ingrese su Contraseña");
+
+            if ( iniciodeSesion == IniciodeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+
+                alert("Bienvenido al sistema " + IniciodeSesionIngresado);
+                break;
+         }
+            else {
+
+            alert("Inicio de sesion Invalido, intente nuevamente");
+         }
+         contador++;
+        }
+
+        alert ("SUPERO EL LIMITE DE INTENTOS")
+    </script>
+
+    
+    
+</body>
+</html>
